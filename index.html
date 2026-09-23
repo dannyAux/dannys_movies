@@ -11,549 +11,704 @@
   body { background: #0b0e14; color: #e6e9f0; font-family: -apple-system, "Segoe UI", sans-serif; margin: 0; padding: 28px 16px; }
   h1 { text-align: center; font-size: 22px; margin: 0 0 4px; }
   .count { text-align: center; color: #94a3b8; font-size: 13px; margin-bottom: 24px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; max-width: 1200px; margin: 0 auto; }
-  .card { background: #12161f; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px; max-width: 1300px; margin: 0 auto; }
+  .card { background: #12161f; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; }
   .card img { width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block; background: #1a2030; }
   .no-poster { width: 100%; aspect-ratio: 2/3; background: #1a2030; display: flex; align-items: center; justify-content: center; font-size: 28px; }
-  .info { padding: 9px 11px; }
-  .info h2 { font-size: 13px; margin: 0 0 2px; font-weight: 600; line-height: 1.3; }
-  .year { color: #94a3b8; font-size: 11.5px; }
+  .info { padding: 10px 12px 12px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+  .info h2 { font-size: 13.5px; margin: 0; font-weight: 600; line-height: 1.3; }
+  .meta { color: #94a3b8; font-size: 11.5px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 4px; }
+  .badge { background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd; border-radius: 20px; padding: 2px 8px; font-size: 10px; font-weight: 500; }
+  .overview { color: #94a3b8; font-size: 11.5px; line-height: 1.45; margin: 0; }
 </style>
 </head>
 <body>
 <h1>Filmbibliothek</h1>
-<div class="count">76 Filme &middot; Stand: 23.09.2026 11:49</div>
+<div class="count">76 Filme &middot; Stand: 23.09.2026 13:25</div>
 <div class="grid">
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/850chzYHYbT3IISl6Q7dbBuFP2B.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>22 Jump Street</h2>
-          <span class="year">2014</span>
+          <div class="meta">2014 · 1h 52min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Nachdem die Neu-Polizisten Schmidt und Jenko ihren ersten Fall erfolgreich lösen konnten, sollen sie erneut als verdeckte Ermittler arbeiten. Dieses Mal wird keine Highschool infiltriert, sondern ein örtliches College. …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/25K1LBbOivoMTHSzsVHw5xSo6Uh.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Asterix &amp; Obelix gegen Caesar</h2>
-          <span class="year">1999</span>
+          <div class="meta">1999 · 1h 50min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Asterix und Obelix stehen vor ungewöhnlichen Schwierigkeiten: Ihr Erzfeind Caesar sitzt im Kerker und dessen Gouverneur Destructivus hat die Macht und den Zaubertrank an sich gerissen. Als dann noch Asterix in die Fänge …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/7w9Rd5hkPXoQQoTxhNor3GyxrXh.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Asterix - Operation Hinkelstein</h2>
-          <span class="year">1989</span>
+          <div class="meta">1989 · 1h 17min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Beim Teutates! So schlecht stand es um unser gallisches Dorf noch nie. Nachdem Obelix dem Druiden Miraculix versehentlich einen Hinkelstein an den Kopf geworfen hat, kann dieser sich nicht mehr an die Formel für den …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/6lo5N0sKvGWyA8NweXb2EwMPaLV.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Asterix - Sieg über Cäsar</h2>
-          <span class="year">1985</span>
+          <div class="meta">1985 · 1h 14min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Cäsar hat Geburtstag und das ganze Reich feiert - mit Ausnahme des berühmten gallischen Dorfes. Weil Cäsar empört ist, lässt er die schöne Falbala, in die Obelix sich Hals über Kopf verliebt hat, und ihren Verlobten …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/iyT93KZcrb3Et2xYYC5KQSdJVzE.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Asterix bei den Briten</h2>
-          <span class="year">1986</span>
+          <div class="meta">1986 · 1h 16min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Nach erfolgreichen Eroberungen sieht Cäsar in Britannien sein nächstes Ziel und beginnt dort mit seinen Truppen einen Feldzug. Die Briten leisten erbittert Widerstand, beenden den Kampf jedoch nachmittags um fünf für …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/zOBv60QA8piwzRtjgorK0XuQHt9.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Asterix erobert Rom</h2>
-          <span class="year">1976</span>
+          <div class="meta">1976 · 1h 18min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Um die schier unbezwingbaren Gallier ein für alle Mal in ihre Schranken zu weisen, fordert Cäsar sie zu 12 Prüfungen heraus. Im Erfolgsfall seiner Rivalen will er sich geschlagen geben. Asterix und Obelix werden für die …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/hJpoCznTlqOFH9yp3Atuj7OfgYN.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Asterix im Land der Götter</h2>
-          <span class="year">2014</span>
+          <div class="meta">2014 · 1h 26min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Schon lange sind die unnachgiebigen Gallier den Römern, allen voran Julius Caesar, ein Dorn im Auge. Da es bislang nicht möglich war, das gallische Völkchen mit militärischen Mitteln zu vertreiben, haben sich Caesar und …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/wQDCj9P67suPY55LA6zxgSH8QFl.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Asterix in Amerika</h2>
-          <span class="year">1994</span>
+          <div class="meta">1994 · 1h 21min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Da die Gallier ohne ihren Zaubertrank keine Chance gegen die Römer haben, läßt Cäsar den Druiden Miraculix entführen und über den Rand der Erdscheibe schießen. Die Erde ist aber nun mal keine Scheibe. Und so landet er, …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/Arp0eqN1WIY4SDgmMo9QBNT5Y90.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Asterix und Kleopatra</h2>
-          <span class="year">1968</span>
+          <div class="meta">1968 · 1h 09min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Königin Kleopatra ärgert sich maßlos über Julius Cäsar, der ihr Volk als minderwertig und heruntergekommen hinstellt. Deshalb schließt sie mit ihm eine Wette ab, bei der ihre Leute innerhalb von 3 Monaten einen …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/woAP8YaiVIuo7YXTeqVQEhXBdfz.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Avengers: Age of Ultron</h2>
-          <span class="year">2015</span>
+          <div class="meta">2015 · 2h 21min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Milliardär, Lebemann und Genie Tony Stark aka Iron Man will ein inaktives Friedensprogramm in Gang bringen, doch dabei geht etwas schief. So taucht der niederträchtige Roboter-Bösewicht Ultron auf und verfolgt Pläne zur …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/b3UIToGx8JIpRqUTGkaoyaNLuU3.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Batman Begins</h2>
-          <span class="year">2005</span>
+          <div class="meta">2005 · 2h 20min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Wie wurde Bruce Wayne zu Batman? Als kleiner Junge musste Bruce Wayne mit ansehen, wie seine Eltern auf grauenhafte Weise umgebracht wurden. Deshalb kümmert sich der Butler Alfred Pennyworth um ihn und zieht ihn …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/7AtBU52GutGeAqCa1nf0c0e66FY.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Chappie</h2>
-          <span class="year">2015</span>
+          <div class="meta">2015 · 2h 00min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Jedes Kind, das auf die Welt kommt, ist voller Zuversicht. Und auf niemanden trifft das mehr zu als auf Chappie: Er ist talentiert, etwas ganz Besonderes und schlicht ein Wunderkind. Wie jedes Kind, gerät er unter den …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/mi08uIh7ZqYlJEMrc5l2986geSU.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Das Imperium schlägt zurück</h2>
-          <span class="year">1980</span>
+          <div class="meta">1980 · 2h 07min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Nach der Zerstörung des Todessterns geht der Kampf zwischen den Rebellen und dem herrschenden Imperium weiter. Die Rebellen haben sich auf den Eisplaneten Hoth zurückgezogen, doch das Imperium spürt sie auf und zerstört …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/8ZdoEoaB0GIuTksxUcKP12qMVV0.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Das Vermächtnis der Tempelritter</h2>
-          <span class="year">2004</span>
+          <div class="meta">2004 · 2h 11min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Benjamin Franklin Gates ist der jüngste Spross einer Familie stolzer Schatzjäger, die sich seit acht Generationen einer einzigen Aufgabe verschrieben haben: Sie suchen überall in den Vereinigten Staaten nach einer …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/k6lw7hhaMDzJ170bfZfBbnipxcW.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Der Herr der Ringe - Die Gefährten</h2>
-          <span class="year">2001</span>
+          <div class="meta">2001 · 1h 46min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Dem Hobbit Bilbo Beutlin fällt zufällig ein machtvoller Ring in die kleinen Hände. Dieses Schmuckstück erlaubte es dem finsteren Herrscher Sauron einst, die Welt zu unterjochen. Der Ring schien über Jahrhunderte …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/uFjlP9U9UOZAzGB25HUtmlEpXbc.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Der Herr der Ringe - Die Rückkehr des Königs</h2>
-          <span class="year">2003</span>
+          <div class="meta">2003 · 2h 08min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Saurons Heer will Minas Tirith angreifen, die in Felsen errichtete Hauptstadt von Gondor. Angesichts der Bedrohlichkeit des feindlichen Heeres wiegt es umso schwerer, dass Gondors König fehlt und nur der schwächliche …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/tgBCeAjPwXeUaf8LsRL0LzBIcdR.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Der Herr der Ringe - Die zwei Türme</h2>
-          <span class="year">2002</span>
+          <div class="meta">2002 · 1h 47min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Der Weg der Gefährten hat sich geteilt. Ringträger Frodo und sein treuer Begleiter Sam treffen in den Bergen von Emyn Muil auf Gollum, dem einst Bilbo Beutlin den Einen Ring wegnahm. Gollums Versuch, den mächtigen Ring …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/mNZ4MxL0KdW9VBMXSAhiiGFDYaa.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Der Hobbit - Die Schlacht der fünf Heere</h2>
-          <span class="year">2014</span>
+          <div class="meta">2014 · 2h 44min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Nachdem Smaug besiegt wurde, sitzt Thorin endlich auf dem Zwergenthron und hat sein Reich wieder. Doch der Kampf gegen den Drachen hat Spuren hinterlassen. Die Stadt Esgaroth wurde zerstört, ihre Bewohner sind nun …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/bPYCAzOB3M3PZ91BpQzJeReKkP8.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Der Hobbit - Eine unerwartete Reise</h2>
-          <span class="year">2012</span>
+          <div class="meta">2012 · 3h 03min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Mit dem Besuch des weisen Zauberers Gandalf verändert sich das beschauliche Leben eines Hobbits für immer. Zögerlich schließt sich der unbedarfte Bilbo mit Gandalf der Mission von 13 mutigen Zwergen an, die ihr Reich …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/60O2sdzZcPX8vXyDOYHi7exrnil.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Der Hobbit - Smaugs Einöde</h2>
-          <span class="year">2013</span>
+          <div class="meta">2013 · 3h 07min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Die Gefährten haben den Beginn ihrer unerwarteten Reise überstanden – auf ihrem Weg gen Osten begegnen sie nun dem Hautwechsler Beorn und im trügerischen Düsterwald einem Schwarm gigantischer Spinnen. Sie werden von den …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/4bpU5O1GzRMznedALIwvHtyLR5W.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Der Mann, der niemals lebte</h2>
-          <span class="year">2008</span>
+          <div class="meta">2008 · 2h 08min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">CIA-Agent Ferris hat schon Situationen überlebt, die seinen Kollegen das Leben gekostet hätten. Sein derzeitiger Auftrag lautet, sich in ein brandgefährliches Terrornetzwerk einzuschleusen, das die Welt mit globalen …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/bwCgRJRq6WUjhXIvBZjSI1lglRv.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Der unglaubliche Hulk</h2>
-          <span class="year">2008</span>
+          <div class="meta">2008 · 1h 52min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Nachdem er bei einem biochemischen Experiment so stark verstrahlt wurde, dass er sich, wann immer er gereizt oder wütend wird, in das grüne Monstrum Hulk verwandelt, lebt der Wissenschaftler Bruce Banner ein …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/lBscKQzEJY1XF2ReZT2vIGrMQ1k.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Die Bibel - Josef</h2>
-          <span class="year">1995</span>
+          <div class="meta">1995 · 1h 12min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Der 18-jährige Josef wird von seinen elf eifersüchtigen Brüdern in die Sklaverei nach Ägypten verkauft. Hier gelangt Josef in den Besitz von Potifar, dem Obersten der Leibwache des Pharao. Dank seiner Fähigkeiten, …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/xwwbeCWW1jMSDPfRPJp8X4oySPr.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Die Rückkehr der Jedi-Ritter</h2>
-          <span class="year">1983</span>
+          <div class="meta">1983 · 2h 15min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Wesen aus allen Ecken der Galaxis treffen die Vorbereitungen für die entscheidende Schlacht gegen die Streitkräfte des Imperiums. Ziel der Aktion ist die totale Zerstörung des zweiten Todessterns, dessen unvorstellbare …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/738LwXpurba93dm0jEDReX98uKm.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Die Schöne und das Biest</h2>
-          <span class="year">1991</span>
+          <div class="meta">1991 · 1h 32min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Eine Fee verwandelt einen bösen Prinzen in ein “Biest”, und alle Schloßbewohner in diverse Haushaltsgegenstände. Erst wenn sich ein Mädchen in den verzauberten Prinzen verliebt, kann der Fluch gebrochen werden. Als sich …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/7Pi8egnTOvXJqCkottfzJsm3j4E.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Die Simpsons - Der Film</h2>
-          <span class="year">2007</span>
+          <div class="meta">2007 · 1h 27min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Die Simpsons haben ein neues Familienmitglied: Ein Schwein, welches Homer fortan besser behandelt als seinen Sohn Bart. Doch nicht nur deswegen kommt Streit in der gelben Familie auf, denn die Exkremente des Schweins …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/vLs8HA7vAfjNSBGwkcTPyycfUbw.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Die versunkene Stadt Z</h2>
-          <span class="year">2017</span>
+          <div class="meta">2017 · 2h 21min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Percy Fawcett ist Offizier der britischen Armee, wo er jedoch aufgrund seiner Herkunft keine Chancen auf eine große Karriere hat. Da kommt ihm ein Auftrag der Royal Society gerade recht, in deren Namen er in Südamerika …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/yK0qrQhi3BbOXvTNOBWHgpcbckZ.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Django Unchained</h2>
-          <span class="year">2012</span>
+          <div class="meta">2012 · 2h 45min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Als das Sklavenpaar Django und seine Frau Broomhilda bei einer Auktion getrennt werden, hat Django nur noch ein Ziel vor Augen: seine Frau wiederzufinden. Die Gelegenheit ergibt sich für den in Fesseln Geschlagenen …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/eMMK2IZ2kWCOO9OwUOhwORkrpOw.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Doctor Strange in the Multiverse of Madness</h2>
-          <span class="year">2022</span>
+          <div class="meta">2022 · 2h 07min</div>
+          <div class="badges"><span class="badge">Dolby Digital+</span></div>
+          <p class="overview">Eigentlich wollte Doctor Strange nur seiner Ex-Freundin Christine zur Hochzeit gratulieren. Zum Feiern ist jedoch keine Zeit: Ein riesiges Monster droht, die Stadt in Schutt und Asche zu legen. Ziel des Wesens ist die …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/vVGTrxtE7LpmsWr3dUHVMZXrBXX.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Drachenzähmen leicht gemacht 2</h2>
-          <span class="year">2014</span>
+          <div class="meta">2014 · 1h 42min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Nachdem die Wikinger der Insel Berk lange Zeit Jagd auf die Drachen gemacht haben, hat sich einiges geändert: Menschen und Drachen haben sich angefreundet und das Drachenreiten ist ein beliebter Sport geworden. Nur …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/r58gYlPtzeTtGYqUiihQEt7N4iu.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Gone Girl - Das perfekte Opfer</h2>
-          <span class="year">2014</span>
+          <div class="meta">2014 · 2h 29min</div>
+          <div class="badges"><span class="badge">DTS</span><span class="badge">DTS-HD</span></div>
+          <p class="overview">Ein warmer Sommermorgen in Missouri: Nick und Amy wollten heute eigentlich ihren fünften Hochzeitstag feiern, doch Amy ist plötzlich verschwunden. Als sie nicht wieder auftaucht, gerät Nick ins Visier der Polizei. Der …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/ckujEWphKR2NG3vLLhUaLzJEGny.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Guardians of the Galaxy Vol. 2</h2>
-          <span class="year">2017</span>
+          <div class="meta">2017 · 2h 16min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Gerade erst sind in Guardians of the Galaxy aus Feinden Freunde geworden und schon machen die fünf Verbündeten gemeinsam das All unsicher. Peter Quill, Gamora, Rocket Raccoon, Groot und Drax the Destroyer bereisen als …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/jrz8nDZH6u3Xfpl74q2xeaS33RL.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Guardians of the Galaxy Vol. 3</h2>
-          <span class="year">2023</span>
+          <div class="meta">2023 · 2h 30min</div>
+          <div class="badges"><span class="badge">Dolby Digital+</span></div>
+          <p class="overview">Peter Quill, der immer noch unter dem Verlust von Gamora leidet, muss sein Team um sich versammeln, um das Universum zu verteidigen und gleichzeitig einen der Seinen zu schützen. Eine Mission, die, wenn sie nicht …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/9rb7n00Q6KDsWH2jZOdeSHe0mvL.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>I Am Legend</h2>
-          <span class="year">2007</span>
+          <div class="meta">2007 · 1h 41min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Robert Neville war ein hervorragender Wissenschaftler, aber auch er konnte nicht verhindern, dass ein Virus vor 3 Jahren die gesamte Menschheit befiel. Nur er wurde aus unbekannten Gründen verschont und hat es sich …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/5eJmKYyYIhJgwUo8YkVe6kiY5h6.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Ice Age 2 - Jetzt taut&#x27;s</h2>
-          <span class="year">2006</span>
+          <div class="meta">2006 · 1h 31min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Das Mammut Manny und seine Freunde Sid und Diego sehen sich mit neuen Problemen konfrontiert. Nachdem sie es sich inmitten des Eises gemütlich gemacht haben, stellen sie fest, dass das Eis hinter einer großen Eiswand zu …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/lIbYpUjwGTk0FZOSB3UfGZtNsJc.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Ice Age 3 - Die Dinosaurier sind los</h2>
-          <span class="year">2009</span>
+          <div class="meta">2009 · 1h 34min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Die drei „Ice Age“-Helden Diego, Sid und Manni haben die große Schmelze aus dem zweiten Teil überstanden. Ellie und Manni, die beiden Mammuts, erwarten Nachwuchs und Sid hegt ebenfalls den Gedanken, die Familiengründung …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/yGVoQ7nFCDE1uuqiZL6ZVSLOZKf.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Illuminati</h2>
-          <span class="year">2009</span>
+          <div class="meta">2009 · 2h 26min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Die Gefahr lauert im Geheimen. Während in Rom die Papstwahlen Gläubige auf der ganzen Welt in Atem halten, plant der untergegangen geglaubte und einst herausragend mächtige Geheimbund „Die Illuminati“ den entscheidenden …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/6Eg7AvTjGhv4GYQtLpYO9UuqI1G.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Independence Day - Wiederkehr</h2>
-          <span class="year">2016</span>
+          <div class="meta">2016 · 2h 00min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">20 Jahre ist es her, dass Aliens die Erde attackierten und die Hälfte der Bevölkerung auslöschten. Vor allem der mutigen Mission des Piloten Steven Hiller und des Satellitentechnikers David Levinson verdanken wir es, …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/nAhGVbqwWXjUMAaZvlmPr6nJOfR.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Iron Man 2</h2>
-          <span class="year">2010</span>
+          <div class="meta">2010 · 2h 05min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Tony Stark ist Iron Man. Nach der Öffentlichmachung dieser Doppelidentität sonnt sich der selbstverliebte Egomane in seinem noch jungen Ruhm als eiserner Weltenretter. Die Eröffnung der eigenen Expo inszeniert er wie …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/nkxlYMT1EWVCSdUn3ZVow2W89sK.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Jagdfieber</h2>
-          <span class="year">2006</span>
+          <div class="meta">2006 · 1h 26min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Der 900 Pfund schwere, handzahme Grizzly Boog und der schmächtige Hirsch Elliott verirren sich ausgerechnet zum Beginn der Jagdsaison im Wald. In der Not beschließt das ungleiche Duo, gemeinsame Sache zu machen. Denn …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/uvigE215SzXdsEFPN0XRFR9RPiA.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>James Bond 007 - Casino Royale</h2>
-          <span class="year">2006</span>
+          <div class="meta">2006 · 2h 25min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Sein erster Auftrag, nachdem er die Lizenz zum Töten erhalten hat, führt den MI6-Agenten James Bond nach Madagaskar, wo er auf den Terroristen Mollaka angesetzt wird. Zwar verläuft nicht alles nach Plan, doch als Bond …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/zmSO6LBHJdVAnlgRHlBmIyVfm6L.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>James Bond 007 - Spectre</h2>
-          <span class="year">2015</span>
+          <div class="meta">2015 · 2h 28min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">James Bond erhält eine kryptische Nachricht aus seiner Vergangenheit, die ihn auf die Spur einer finsteren Organisation bringt. Bond muss immer mehr entdecken, dass es viele Täuschungen und Lügen gibt, die er …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/y68X15hwEJTW2PaJkl5rrJpnHyt.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>King Kong</h2>
-          <span class="year">2005</span>
+          <div class="meta">2005 · 3h 20min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Amerika in den 30er Jahren: Für seinen neuen Film will der Regisseur Carl Denham eine ganz besondere Kulisse haben. Diese hat er auch schon in einer abgelegenen Insel, &quot;Skull Island&quot;, im Gegensatz zu der weiblichen …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/crUUE14AROxNWsMdmyyqZNcUB6L.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Krieg der Sterne</h2>
-          <span class="year">1977</span>
+          <div class="meta">1977 · 2h 05min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Seit der Vernichtung der Jedi-Ritter steht die Galaxie unter der grausamen Herrschaft des Imperiums. Nur eine kleine Gruppe von Rebellen, angeführt von der schönen Prinzessin Leia, widersetzt sich der dunklen Macht. Als …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/Ao7ikR1ksPyWJT4gcTnCye0VaYY.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Kung Fu Panda</h2>
-          <span class="year">2008</span>
+          <div class="meta">2008 · 1h 32min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Der kleine Pandabär Po macht in China eine Ausbildung zum Nudelsuppen-Meister. Doch in Wirklichkeit möchte er viel lieber ein berühmter und starker Kung-Fu Kämpfer werden, obwohl sein pummeliges Äußeres und seine …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/j1w9tgAukUHMPylpzQMN7n9F3Am.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Könige der Wellen</h2>
-          <span class="year">2007</span>
+          <div class="meta">2007 · 1h 26min</div>
+          <div class="badges"><span class="badge">Dolby TrueHD</span></div>
+          <p class="overview">Übrigens: Surfen wurde einst von den Pinguinen erfunden. Also kein Wunder, wenn die Vögel untereinander ihre eigenen Surf-Weltmeisterschaften abhalten. Grund genug für den Heißsporn Cody Maverick, von der Antarktis den …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/dCEaaECszzgA9JiQaMXDcJ32Lgl.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Lara Croft: Tomb Raider</h2>
-          <span class="year">2001</span>
+          <div class="meta">2001 · 1h 41min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Laras vor Jahren verstorbener Vater macht in einer Nacht, in der eine ungewöhnliche Sternenkonstellation eine bevorstehende absolute Sonnenfinsternis ankündigt, auf sich aufmerksam. Die aus dem Schlaf gerissene Lara …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/rOgtJYPApEgruKTJNOO3ca5JPNZ.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Les Misérables</h2>
-          <span class="year">2012</span>
+          <div class="meta">2012 · 2h 38min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Valjean, der 19 Jahre für den Diebstahl eines Laibes Brot verbüßt hat, macht nach seiner Freilassung eine tiefgreifende religiöse Erfahrung. Er taucht unter und hat sich acht Jahre später zum wohltätigen Fabrikbesitzer …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/wEKdL4qGvfsbLiDHor0cyaqVUCx.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Lincoln</h2>
-          <span class="year">2012</span>
+          <div class="meta">2012 · 2h 31min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Der 16. Präsident der Vereinigten Staaten von Amerika, Abraham Lincoln führt 1861 bis 1865 die Nordstaaten in den Bürgerkrieg gegen die Südstaaten. Als der Sezessionskrieg dem Ende entgegen geht, legt sich der Präsident …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/5CzJlPFLicVvSLeFa4G4IpyXH3x.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Lissi und der wilde Kaiser</h2>
-          <span class="year">2007</span>
+          <div class="meta">2007 · 1h 25min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Die österreichische Kaiserin Lissi und ihr geliebter Franz werden an ihrem Turteltag während der Striptease-Vorführung auseinander gerissen. Der Yeti hat sich aus dem weiten Himalaya auf den Weg ins Alpenland gemacht …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/bD6VMhlO2AcE08YCDbkARtiAu3h.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Lone Ranger</h2>
-          <span class="year">2013</span>
+          <div class="meta">2013 · 2h 30min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Der kauzige Indianer Tonto erzählt seine ganz eigene Version der sagenhaften Geschichte des maskierten Lone Rangers: Die berühmten Texas-Ranger sorgen für Recht und Ordnung. Meistens jedenfalls. Als die gefürchtete …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/iIgt1IlXacoBJDrfze5DlvV7szf.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Madagascar 2</h2>
-          <span class="year">2008</span>
+          <div class="meta">2008 · 1h 29min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">In ihrem neuen Abenteuer möchten Alex, Marty, Melman und Gloria die Insel Madagaskar, wo sie nach einer längeren Odyssee gestrandet waren, verlassen, und wieder zurück &quot;nach Hause&quot; in den Zoo im New Yorker Central Park. …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/w5o7Y2zRimfOCFbLDDfMzALtzqD.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Marley &amp; Ich</h2>
-          <span class="year">2008</span>
+          <div class="meta">2008 · 1h 56min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Wenn man verheiratet ist, stellt sich zwangsläufig auch bald die Frage nach Kindern, doch für John und Jenny bleiben da noch Zweifel, ob sie dem schon gewachsen sind. Weil aber der Kinderwunsch sich regt, will John …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/cmB9lxrLPgeHeeJEz3Rf7YVzon3.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Mord ist mein Geschäft, Liebling</h2>
-          <span class="year">2009</span>
+          <div class="meta">2009 · 1h 49min</div>
+          <div class="badges"><span class="badge">Dolby TrueHD</span></div>
+          <p class="overview">Eigentlich ist Toni Ricardelli mit seinem Beruf als Profikiller ganz zufrieden: &quot;Gute Bezahlung, flexible Arbeitszeiten und man hat viel mit Menschen zu tun.&quot; Das Einzige, was ihm zu seinem Glück noch fehlt, ist die …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/hE8f0jzayDPJjF647OkvC1H3aUp.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Oblivion</h2>
-          <span class="year">2013</span>
+          <div class="meta">2013 · 2h 05min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Die Erdoberfläche ist bis zur Unkenntlichkeit zerstört und eine brutale Alienrasse, die sich noch immer in den Trümmern verschanzt, macht den Aufenthalt lebensgefährlich. Nur wenige wagen sich auf den verwüsteten …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/lXO1ZezCUettZezhN7PyqtsMIHz.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Peter Pan</h2>
-          <span class="year">2003</span>
+          <div class="meta">2003 · 1h 53min</div>
+          <div class="badges"><span class="badge">Dolby TrueHD</span></div>
+          <p class="overview">Abenteuer. Schwertkämpfe. Zauberei. Das ist der Stoff, aus dem Wendy die Gute-Nacht-Geschichten für ihre Brüder John und Michael strickt. Fasziniert lauschen sie abends den fantastischen Märchen ihrer großen Schwester. …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/wZJ47VJJPS4dCouXx2M0YU3lvAS.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Ratatouille</h2>
-          <span class="year">2007</span>
+          <div class="meta">2007 · 1h 51min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Der kleine Remy träumt davon, ein berühmter Chefkoch zu werden. Dabei hat er nicht nur mit den Vorurteilen seiner Familie zu kämpfen, sondern auch mit dem offenkundigen Problem, dass es sich bei dem angepeilten …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/xRGeAT2dAYmHT5ucsYBj4xegKdV.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Rogue One: A Star Wars Story</h2>
-          <span class="year">2016</span>
+          <div class="meta">2016 · 2h 14min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Die mehrfach verurteilte Jyn Erso passt gut ins Anforderungsprofil für die Rebellion gegen das galaktische Imperium. Sie ist hart, kompromisslos und steht außerhalb der Gesellschaft. Aber es gibt noch einen weiteren, …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/mm07ImVjMcrBFhcepmy63toBfax.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Shutter Island</h2>
-          <span class="year">2010</span>
+          <div class="meta">2010 · 2h 18min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">1954 soll der U.S. Marshall Teddy Daniels das Verschwinden eines Patienten aus dem Bostoner Shutter Island Ashecliffe Hospital aufklären. Er hat sich aus persönlichen Gründen um diesen Auftrag bemüht, aber schon bald …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/6EyJ3fxzjDr0Ly4i4u9VD8sja1N.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Star Wars: Das Erwachen der Macht</h2>
-          <span class="year">2015</span>
+          <div class="meta">2015 · 2h 18min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Über 30 Jahre sind vergangen, seitdem die Rebellen den zweiten Todesstern über Endor zerstört und damit die entscheidende Schlacht gegen die finsteren Mächte des Imperiums gewonnen haben. Doch aus der Asche des Bösen …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/6LyUrFO0i5AgpWVQlAQyA01Euhy.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Star Wars: Die letzten Jedi</h2>
-          <span class="year">2017</span>
+          <div class="meta">2017 · 2h 32min</div>
+          <div class="badges"><span class="badge">Dolby Digital+</span></div>
+          <p class="overview">Die planetenvernichtende Starkiller-Basis der Ersten Ordnung ist zwar zerstört, die Neue Republik nach der vorherigen Zerstörung von fünf Welten aber massiv geschwächt. Sie steht am Abgrund und wird nur noch von …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/4e0X8XDjgLu3H2iKiCz44WEl7dA.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Star Wars: Episode I - Die dunkle Bedrohung</h2>
-          <span class="year">1999</span>
+          <div class="meta">1999 · 2h 16min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Nachdem der friedliche Planet Naboo von der Handelsföderation angegriffen wurde, müssen die Jedi-Ritter Qui-Gon Jinn und Obi-Wan Kenobi gemeinsam mit Königin Amidala auf dem Wüstenplaneten Tatooine notlanden. Dort …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/q090XcaB783cXdRBOU9TfsmGGP8.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Star Wars: Episode II - Angriff der Klonkrieger</h2>
-          <span class="year">2002</span>
+          <div class="meta">2002 · 2h 22min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Der junge Jedi-Schüler Anakin Skywalker beginnt sich allmählich zu einem grossen und ernstzunehmenden Jediritter zu entwickeln, der unter der Führung von Obi Wan-Kenobi steht. Jedoch hat er auch seine Problemzonen - …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/kW3v2VS0kRvMTS6atR4MzjrzxAP.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Star Wars: Episode III - Die Rache der Sith</h2>
-          <span class="year">2005</span>
+          <div class="meta">2005 · 2h 20min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Nach drei Jahren nähern sich die Klonkriege endlich dem Ende. Um die Separatisten endgültig zu besiegen, soll Obi-Wan Kenobi ihren Anführer General Grevious und Count Dooku ihrer gerechten Strafe zuführen. Zur …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/b64MdnHYONzg0VB3HePJjuA9zhi.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Stereo</h2>
-          <span class="year">2014</span>
+          <div class="meta">2014 · 1h 38min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Endlich weg vom Großstadtstress. Das denkt sich Erik als er mit seiner Freundin Julia und deren Tochter Linda in eine Kleinstadt auf dem Land zieht. Hier kann er sich endlich seiner Motorrad-Werkstatt widmen und die …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/kicXJhMpeB5xFbBG4EHcfIyOnyK.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>The Hateful 8</h2>
-          <span class="year">2015</span>
+          <div class="meta">2015 · 2h 48min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Irgendwo im verschneiten Wyoming, einige Jahre nach dem Bürgerkrieg: Eine Postkutsche kämpft sich auf dem Weg zum Städtchen Red Rock durch die Landschaft. An Bord sind der Kopfgeldjäger John Ruth, seine Gefangene Daisy …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/l4jaL7XrNvtueR4xL1zC1yLiiRv.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>The Imitation Game - Ein streng geheimes Leben</h2>
-          <span class="year">2014</span>
+          <div class="meta">2014 · 1h 54min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Nach einer unglücklichen Jugend beginnt der brillante Mathematiker Alan Turing während seines Studiums an der Cambridge-Universität, sein volles Potenzial zu entfalten. Schnell gehört er zu den führenden Denkern des …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/nCk2mglh4fJYPEUXcjD8jgovhG9.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>The Jungle Book</h2>
-          <span class="year">2016</span>
+          <div class="meta">2016 · 1h 46min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Der junge Mogli ist nach einem Zwischenfall von seiner Familie getrennt und von nun an alleine im indischen Dschungel unterwegs. Er findet jedoch schon bald Zuflucht bei der Wolfsmutter Rakcha, die ihn als einer seiner …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/gJEk51KVgBgViSuhzYq7Kun070Q.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>The Tourist</h2>
-          <span class="year">2010</span>
+          <div class="meta">2010 · 1h 43min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Frank ist The Tourist, ein Amerikaner auf dem Weg nach Italien, um sich nach einer schmerzhaften Trennung ein wenig abzulenken. Die Ablenkung folgt auf den Fuß, als er im Zug nach Venedig der atemberaubenden Elise …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/cvLe7YpLTsgT25FpuTD1bwgEcWZ.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Top Gun: Maverick</h2>
-          <span class="year">2022</span>
+          <div class="meta">2022 · 2h 10min</div>
+          <div class="badges"><span class="badge">Dolby Atmos</span></div>
+          <p class="overview">Aufgrund seiner Probleme mit Autoritäten hat es Flieger-Ass Maverick nie geschafft, die ganz große Karriere in der Navy zu machen. Anstatt Orden konnte er so vielmehr disziplinarische Verfahren sammeln. Nachdem er …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/qtjn8nYcl8gX3owkqi0BmYbE14R.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Transformers</h2>
-          <span class="year">2007</span>
+          <div class="meta">2007 · 2h 23min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Zwei außerirdische Roboterrassen, die den Menschen gut gesinnten Autobots und die zerstörerischen Decepticons, kommen auf die Erde und tragen dort ihren Kampf gegeneinander aus. Es stellen sich ihnen nur wenige mutige …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/gTxxxbMc8rnL8AaOcpJzuRVTkpR.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Transformers - Die Rache</h2>
-          <span class="year">2009</span>
+          <div class="meta">2009 · 2h 30min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Nachdem Sam Witwicky die Welt mit Hilfe der gutmütigen Autobots vor den bösartigen Decepticons gerettet hat, freut er sich auf ein normales Leben. Als er aufs College geht, lässt er nicht nur Freundin Mikaela zurück, …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/88EItC5L9RLub7lqNcOg1WNmXbH.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Transformers 3</h2>
-          <span class="year">2011</span>
+          <div class="meta">2011 · 2h 34min</div>
+          <div class="badges"><span class="badge">Dolby Digital</span></div>
+          <p class="overview">Am 20. Juli 1969 landet Apollo 11 auf dem Mond. Auf der dunklen Seite des Mondes stoßen die Astronauten auf das Wrack eines Raumschiffs. 40 Jahre lang hält die Regierung die Entdeckung geheim. Dann überschlagen sich die …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/vJiDCgo9qKxQfxdi6Gsc7gQkDnQ.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>TRON: Legacy</h2>
-          <span class="year">2010</span>
+          <div class="meta">2010 · 2h 05min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">21 Jahre nach dem mysteriösen Verschwinden seines Vaters folgt Sam Flynn dem Lockruf eines Pagersignals und wird in die digitale Computerwelt des &quot;Grid&quot; hineingezogen. Dort hat Clu, das einst von seinem Vater …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/TPClTvyD4a8DGz7sD8si6x7QqB.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>WALL·E - Der Letzte räumt die Erde auf</h2>
-          <span class="year">2008</span>
+          <div class="meta">2008 · 1h 38min</div>
+          <div class="badges"><span class="badge">DTS</span></div>
+          <p class="overview">Wall·E ist ein kleiner Haushaltsroboter, der klaglos seinen Dienst verrichtet und Müll zusammenpresst, um ihn zu Wolkenkratzern aufzustapeln. Denn der kleine rostige Kasten macht seinen Job seit nunmehr 700 Jahren! …</p>
         </div>
       </div>
       <div class="card">
         <img src="https://image.tmdb.org/t/p/w500/bRxTO9rT7Xny4xunFFkw3WDLWSc.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>White House Down</h2>
-          <span class="year">2013</span>
+          <div class="meta">2013 · 2h 12min</div>
+          <div class="badges"><span class="badge">DTS-HD</span></div>
+          <p class="overview">Dem Washingtoner Polizisten John Cale wurde gerade sein Traumjob verwehrt, für den Secret Service als Personenschützer von Präsident James Sawyer zu arbeiten. Weil er seiner kleinen Tochter die schlechte Nachricht …</p>
         </div>
       </div>
 </div>
