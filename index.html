@@ -10,7 +10,13 @@
   * { box-sizing: border-box; }
   body { background: #0b0e14; color: #e6e9f0; font-family: -apple-system, "Segoe UI", sans-serif; margin: 0; padding: 28px 16px; }
   h1 { text-align: center; font-size: 22px; margin: 0 0 4px; }
-  .count { text-align: center; color: #94a3b8; font-size: 13px; margin-bottom: 24px; }
+  .count { text-align: center; color: #94a3b8; font-size: 13px; margin-bottom: 14px; }
+  .search-wrap { max-width: 420px; margin: 0 auto 20px; }
+  .search-input { width: 100%; background: #12161f; border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 9px 12px; color: #e6e9f0; font-size: 14px; }
+  .search-input:focus { outline: none; border-color: rgba(59,130,246,0.5); }
+  .search-input::placeholder { color: #64748b; }
+  .no-results { display: none; text-align: center; color: #64748b; font-size: 13px; margin-top: 20px; }
+  .no-results.show { display: block; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); gap: 10px; max-width: 1300px; margin: 0 auto; }
   .card { background: #12161f; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; cursor: pointer; transition: transform 0.15s, border-color 0.15s; }
   .card:hover, .card:focus-visible { transform: translateY(-2px); border-color: rgba(255,255,255,0.2); outline: none; }
@@ -35,8 +41,11 @@
 </head>
 <body>
 <h1>Filmbibliothek</h1>
-<div class="count">77 Filme &middot; Stand: 23.09.2026 14:54</div>
-<div class="grid">
+<div class="count" id="count">77 Filme &middot; Stand: 23.09.2026 15:01</div>
+<div class="search-wrap">
+  <input type="text" id="search" class="search-input" placeholder="Filme durchsuchen …" autocomplete="off">
+</div>
+<div class="grid" id="grid">
       <div class="card" data-index="0" tabindex="0" role="button" aria-label="Details zu 22 Jump Street">
         <img src="https://image.tmdb.org/t/p/w500/850chzYHYbT3IISl6Q7dbBuFP2B.jpg" alt="" loading="lazy">
         <div class="info">
@@ -577,6 +586,7 @@
         </div>
       </div>
 </div>
+<div class="no-results" id="no-results">Keine Filme gefunden.</div>
 
 <div class="overlay" id="overlay">
   <div class="detail">
@@ -625,6 +635,33 @@ document.getElementById("overlay").addEventListener("click", (e) => {
 });
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeDetail();
+});
+
+// Einfache Textsuche im Titel -- rein clientseitig, da alle Filmdaten
+// (MOVIES) ohnehin schon fuers Detail-Overlay eingebettet sind, kein
+// zusaetzlicher Request noetig. Blendet nicht passende Kacheln per
+// Inline-style aus (bewusst NICHT das "hidden"-Attribut -- .card setzt
+// selbst schon "display: flex", das gewinnt gegen die Browser-Standard-
+// regel fuer [hidden]; eine ausgeblendete Karte waere trotzdem sichtbar
+// geblieben, nur der Trefferzaehler haette gestimmt -- live so gefunden).
+// Inline-style gewinnt garantiert gegen jede Stylesheet-Regel.
+const searchInput = document.getElementById("search");
+const cards = Array.from(document.querySelectorAll(".card"));
+const totalCount = 77;
+
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.trim().toLowerCase();
+  let visible = 0;
+  cards.forEach((card) => {
+    const name = (MOVIES[Number(card.dataset.index)]?.name || "").toLowerCase();
+    const matches = !query || name.includes(query);
+    card.style.display = matches ? "" : "none";
+    if (matches) visible++;
+  });
+  document.getElementById("no-results").classList.toggle("show", visible === 0);
+  document.getElementById("count").textContent = query
+    ? `${visible} von ${totalCount} Filmen`
+    : `${totalCount} Filme · Stand: 23.09.2026 15:01`;
 });
 </script>
 </body>
