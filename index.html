@@ -41,7 +41,7 @@
 </head>
 <body>
 <h1>Filmbibliothek</h1>
-<div class="count" id="count">83 Filme &middot; Stand: 25.09.2026 16:34</div>
+<div class="count" id="count">83 Filme &middot; Stand: 25.09.2026 16:36</div>
 <div class="search-wrap">
   <input type="text" id="search" class="search-input" placeholder="Filme durchsuchen …" autocomplete="off">
 </div>
@@ -703,7 +703,7 @@ searchInput.addEventListener("input", () => {
   document.getElementById("no-results").classList.toggle("show", visible === 0);
   document.getElementById("count").textContent = query
     ? `${visible} von ${totalCount} Filmen`
-    : `${totalCount} Filme · Stand: 25.09.2026 16:34`;
+    : `${totalCount} Filme · Stand: 25.09.2026 16:36`;
 });
 </script>
 </body>
