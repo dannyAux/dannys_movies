@@ -41,18 +41,12 @@
 </head>
 <body>
 <h1>Merkliste</h1>
-<div class="count" id="count">1 gemerkte Filme &middot; Stand: 02.10.2026 14:42</div>
+<div class="count" id="count">0 gemerkte Filme &middot; Stand: 02.10.2026 14:42</div>
 <div class="search-wrap">
   <input type="text" id="search" class="search-input" placeholder="Merkliste durchsuchen …" autocomplete="off">
 </div>
 <div class="grid" id="grid">
-      <div class="card" data-index="0" tabindex="0" role="button" aria-label="Details zu Avatar – Der Herr der Elemente">
-        <img src="https://image.tmdb.org/t/p/w500/dfz1rl2o1ChfGfeLWX5PNeX9hUO.jpg" alt="" loading="lazy">
-        <div class="info">
-          <h2>Avatar – Der Herr der Elemente</h2>
-          <div class="meta">2024</div>
-        </div>
-      </div>
+
 </div>
 <div class="no-results" id="no-results">Keine Filme gefunden.</div>
 
@@ -70,7 +64,7 @@
 </div>
 
 <script>
-const MOVIES = [{"name": "Avatar – Der Herr der Elemente", "year": 2024, "duration": "22.02.2024", "audio_labels": ["Action & Adventure", "Sci-Fi & Fantasy", "Drama", "Familie"], "overview": "Der als Avatar bekannte Junge muss vier elementare Kräfte beherrschen, um eine Welt im Krieg zu retten, und einen skrupellosen Feind besiegen, der dies verhindern will.", "poster": "https://image.tmdb.org/t/p/w500/dfz1rl2o1ChfGfeLWX5PNeX9hUO.jpg"}];
+const MOVIES = [];
 
 function openDetail(i) {
   const m = MOVIES[i];
@@ -119,7 +113,7 @@ document.addEventListener("keydown", (e) => {
 // Inline-style gewinnt garantiert gegen jede Stylesheet-Regel.
 const searchInput = document.getElementById("search");
 const cards = Array.from(document.querySelectorAll(".card"));
-const totalCount = 1;
+const totalCount = 0;
 
 searchInput.addEventListener("input", () => {
   const query = searchInput.value.trim().toLowerCase();
