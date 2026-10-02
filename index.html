@@ -41,7 +41,7 @@
 </head>
 <body>
 <h1>Merkliste</h1>
-<div class="count" id="count">3 gemerkte Filme &middot; Stand: 02.10.2026 14:27</div>
+<div class="count" id="count">4 gemerkte Filme &middot; Stand: 02.10.2026 14:27</div>
 <div class="search-wrap">
   <input type="text" id="search" class="search-input" placeholder="Merkliste durchsuchen …" autocomplete="off">
 </div>
@@ -67,6 +67,13 @@
           <div class="meta">2026</div>
         </div>
       </div>
+      <div class="card" data-index="3" tabindex="0" role="button" aria-label="Details zu Shelter">
+        <img src="https://image.tmdb.org/t/p/w500/fz8fhY5xuE6NenYDuBsHbB7wUdj.jpg" alt="" loading="lazy">
+        <div class="info">
+          <h2>Shelter</h2>
+          <div class="meta">2026</div>
+        </div>
+      </div>
 </div>
 <div class="no-results" id="no-results">Keine Filme gefunden.</div>
 
@@ -84,7 +91,7 @@
 </div>
 
 <script>
-const MOVIES = [{"name": "Der Astronaut – Project Hail Mary", "year": 2026, "duration": "27.08.2026", "audio_labels": ["Science Fiction", "Abenteuer"], "overview": "Als Ryland Grace erwacht, muss er feststellen, dass er ganz allein ist. Er ist anscheinend der einzige Überlebende einer Raumfahrtmission, Millionen Kilometer von zu Hause entfernt, auf einem Flug ins Tau-Ceti-Sternsystem. Aber was erwartet ihn dort? Und warum sind alle anderen Besatzungsmitglieder tot? Nach und nach dämmert es Grace, dass von seinem Überleben nicht nur die Mission, sondern die Zukunft der gesamten Erdbevölkerung abhängt.", "poster": "https://image.tmdb.org/t/p/w500/qUraey7aJVaqx6NhlXl5Q7Z1rEX.jpg"}, {"name": "Kill Bill: The Whole Bloody Affair", "year": 2026, "duration": "05.11.2026", "audio_labels": ["Action", "Krimi", "Drama", "Thriller"], "overview": "Eine junge Frau, die abwechselnd „die Braut“, „Black Mamba“ oder „Kiddo“ genannt wird, ist Mitglied des von Bill geführten Attentatskommandos Tödliche Viper. Kiddo ist mit Bill liiert und wird von ihm schwanger, verschweigt es ihm aber. Sie will ihr Kind nicht in diesem Milieu aufwachsen lassen, kehrt daraufhin von einem Auftrag nicht zurück und lässt Bill in dem Glauben, sie sei getötet worden. In ihrem neuen Leben arbeitet sie in einem Plattenladen, dessen Inhaber sie heiraten will. Neun Monate später spürt das Attentatskommando sie jedoch auf und erschießt bei der Probe von Kiddos Hochzeit die versammelte Gesellschaft. Die hochschwangere Braut wird von Bill mit einem Kopfschuss lebensgefährlich verletzt und liegt vier Jahre auf einer Pflegestation im Koma. Als sie daraus erwacht, flüchtet sie aus dem Krankenhaus, stellt unter der Überschrift „Death List Five“ eine Todesliste (eng.: „kill bill“) auf und arbeitet sie schrittweise ab.", "poster": "https://image.tmdb.org/t/p/w500/iGv3RdpM6aK7KgTk8gUK9gDZEts.jpg"}, {"name": "Masters of the Universe", "year": 2026, "duration": "22.10.2026", "audio_labels": ["Action", "Fantasy", "Science Fiction"], "overview": "Nach 15 Jahren der Trennung führt das Schwert der Macht Prinz Adam zurück nach Eternia und entdeckt, dass seine Heimat unter der heimtückischen Herrschaft von Skeletor in Trümmern liegt. Um seine Familie und seine Welt zu retten, muss sich Adam mit seinen engsten Verbündeten zusammenschließen – Teela und Duncan alias Man-At-Arms – und sein wahres Schicksal als He-Man annehmen, den mächtigsten Mann des Universums.", "poster": "https://image.tmdb.org/t/p/w500/c4hwwylwgo5lBO2O2WSBxxQF2kC.jpg"}];
+const MOVIES = [{"name": "Der Astronaut – Project Hail Mary", "year": 2026, "duration": "27.08.2026", "audio_labels": ["Science Fiction", "Abenteuer"], "overview": "Als Ryland Grace erwacht, muss er feststellen, dass er ganz allein ist. Er ist anscheinend der einzige Überlebende einer Raumfahrtmission, Millionen Kilometer von zu Hause entfernt, auf einem Flug ins Tau-Ceti-Sternsystem. Aber was erwartet ihn dort? Und warum sind alle anderen Besatzungsmitglieder tot? Nach und nach dämmert es Grace, dass von seinem Überleben nicht nur die Mission, sondern die Zukunft der gesamten Erdbevölkerung abhängt.", "poster": "https://image.tmdb.org/t/p/w500/qUraey7aJVaqx6NhlXl5Q7Z1rEX.jpg"}, {"name": "Kill Bill: The Whole Bloody Affair", "year": 2026, "duration": "05.11.2026", "audio_labels": ["Action", "Krimi", "Drama", "Thriller"], "overview": "Eine junge Frau, die abwechselnd „die Braut“, „Black Mamba“ oder „Kiddo“ genannt wird, ist Mitglied des von Bill geführten Attentatskommandos Tödliche Viper. Kiddo ist mit Bill liiert und wird von ihm schwanger, verschweigt es ihm aber. Sie will ihr Kind nicht in diesem Milieu aufwachsen lassen, kehrt daraufhin von einem Auftrag nicht zurück und lässt Bill in dem Glauben, sie sei getötet worden. In ihrem neuen Leben arbeitet sie in einem Plattenladen, dessen Inhaber sie heiraten will. Neun Monate später spürt das Attentatskommando sie jedoch auf und erschießt bei der Probe von Kiddos Hochzeit die versammelte Gesellschaft. Die hochschwangere Braut wird von Bill mit einem Kopfschuss lebensgefährlich verletzt und liegt vier Jahre auf einer Pflegestation im Koma. Als sie daraus erwacht, flüchtet sie aus dem Krankenhaus, stellt unter der Überschrift „Death List Five“ eine Todesliste (eng.: „kill bill“) auf und arbeitet sie schrittweise ab.", "poster": "https://image.tmdb.org/t/p/w500/iGv3RdpM6aK7KgTk8gUK9gDZEts.jpg"}, {"name": "Masters of the Universe", "year": 2026, "duration": "22.10.2026", "audio_labels": ["Action", "Fantasy", "Science Fiction"], "overview": "Nach 15 Jahren der Trennung führt das Schwert der Macht Prinz Adam zurück nach Eternia und entdeckt, dass seine Heimat unter der heimtückischen Herrschaft von Skeletor in Trümmern liegt. Um seine Familie und seine Welt zu retten, muss sich Adam mit seinen engsten Verbündeten zusammenschließen – Teela und Duncan alias Man-At-Arms – und sein wahres Schicksal als He-Man annehmen, den mächtigsten Mann des Universums.", "poster": "https://image.tmdb.org/t/p/w500/c4hwwylwgo5lBO2O2WSBxxQF2kC.jpg"}, {"name": "Shelter", "year": 2026, "duration": "07.08.2026", "audio_labels": ["Action", "Krimi", "Thriller"], "overview": "Der ehemalige Elite-Agent Michael Mason lebt auf einer schottischen Insel in völliger Isolation. Als eines Tages ein schwerer Sturm aufzieht und ein Boot kentert, rettet er ein Mädchen vor dem Ertrinken. Für den Bootsführer kommt jede Hilfe zu spät. Kurzerhand nimmt Michael Jessie bei sich auf und löst damit eine Kette unvorhergesehener Ereignisse aus: Sein Versteck wird entdeckt und von einem brutalen Squad-Team überfallen. Michael sieht sich gezwungen, seinen Zufluchtsort zu verlassen und in jene Welt zurückzukehren, der er für immer entkommen wollte. Um die Teenagerin in Sicherheit zu bringen, muss er sich den Dämonen seiner Vergangenheit stellen …", "poster": "https://image.tmdb.org/t/p/w500/fz8fhY5xuE6NenYDuBsHbB7wUdj.jpg"}];
 
 function openDetail(i) {
   const m = MOVIES[i];
@@ -133,7 +140,7 @@ document.addEventListener("keydown", (e) => {
 // Inline-style gewinnt garantiert gegen jede Stylesheet-Regel.
 const searchInput = document.getElementById("search");
 const cards = Array.from(document.querySelectorAll(".card"));
-const totalCount = 3;
+const totalCount = 4;
 
 searchInput.addEventListener("input", () => {
   const query = searchInput.value.trim().toLowerCase();
