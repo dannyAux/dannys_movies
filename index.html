@@ -41,19 +41,26 @@
 </head>
 <body>
 <h1>Merkliste</h1>
-<div class="count" id="count">2 gemerkte Filme &middot; Stand: 02.10.2026 21:51</div>
+<div class="count" id="count">3 gemerkte Filme &middot; Stand: 02.10.2026 21:56</div>
 <div class="search-wrap">
   <input type="text" id="search" class="search-input" placeholder="Merkliste durchsuchen …" autocomplete="off">
 </div>
 <div class="grid" id="grid">
-      <div class="card" data-index="0" tabindex="0" role="button" aria-label="Details zu Game of Thrones">
+      <div class="card" data-index="0" tabindex="0" role="button" aria-label="Details zu A Knight of the Seven Kingdoms">
+        <img src="https://image.tmdb.org/t/p/w500/w7mQVY9951KdUGWN3rCSOkTR5MK.jpg" alt="" loading="lazy">
+        <div class="info">
+          <h2>A Knight of the Seven Kingdoms</h2>
+          <div class="meta">2026</div>
+        </div>
+      </div>
+      <div class="card" data-index="1" tabindex="0" role="button" aria-label="Details zu Game of Thrones">
         <img src="https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Game of Thrones</h2>
           <div class="meta">2011</div>
         </div>
       </div>
-      <div class="card" data-index="1" tabindex="0" role="button" aria-label="Details zu Kill Bill: The Whole Bloody Affair">
+      <div class="card" data-index="2" tabindex="0" role="button" aria-label="Details zu Kill Bill: The Whole Bloody Affair">
         <img src="https://image.tmdb.org/t/p/w500/iGv3RdpM6aK7KgTk8gUK9gDZEts.jpg" alt="" loading="lazy">
         <div class="info">
           <h2>Kill Bill: The Whole Bloody Affair</h2>
@@ -77,7 +84,7 @@
 </div>
 
 <script>
-const MOVIES = [{"name": "Game of Thrones", "year": 2011, "duration": "17.04.2011", "audio_labels": ["Sci-Fi & Fantasy", "Drama", "Action & Adventure"], "overview": "Die Handlung ist in einer fiktiven Welt angesiedelt und spielt auf den Kontinenten Westeros, den Sieben Königreichen sowie im Gebiet der \"Mauer\" und jenseits davon im Norden und Essos. In dieser Welt ist die Länge der Sommer und Winter unvorhersehbar und variabel; eine Jahreszeit kann Jahre oder sogar Jahrzehnte dauern. Der Handlungsort auf dem Kontinent Westeros in den Sieben Königreichen ähnelt dabei stark dem mittelalterlichen Europa. Die Geschichte spielt am Ende eines langen Sommers und wird in drei Handlungssträngen weitgehend parallel erzählt. In den Sieben Königreichen bauen sich zwischen den mächtigsten Adelshäusern des Reiches Spannungen auf, die schließlich zum offenen Thronkampf führen. Gleichzeitig droht der Wintereinbruch und es zeichnet sich eine Gefahr durch eine fremde Rasse im hohen Norden von Westeros ab.", "poster": "https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg"}, {"name": "Kill Bill: The Whole Bloody Affair", "year": 2026, "duration": "05.11.2026", "audio_labels": ["Action", "Krimi", "Drama", "Thriller"], "overview": "Eine junge Frau, die abwechselnd „die Braut“, „Black Mamba“ oder „Kiddo“ genannt wird, ist Mitglied des von Bill geführten Attentatskommandos Tödliche Viper. Kiddo ist mit Bill liiert und wird von ihm schwanger, verschweigt es ihm aber. Sie will ihr Kind nicht in diesem Milieu aufwachsen lassen, kehrt daraufhin von einem Auftrag nicht zurück und lässt Bill in dem Glauben, sie sei getötet worden. In ihrem neuen Leben arbeitet sie in einem Plattenladen, dessen Inhaber sie heiraten will. Neun Monate später spürt das Attentatskommando sie jedoch auf und erschießt bei der Probe von Kiddos Hochzeit die versammelte Gesellschaft. Die hochschwangere Braut wird von Bill mit einem Kopfschuss lebensgefährlich verletzt und liegt vier Jahre auf einer Pflegestation im Koma. Als sie daraus erwacht, flüchtet sie aus dem Krankenhaus, stellt unter der Überschrift „Death List Five“ eine Todesliste (eng.: „kill bill“) auf und arbeitet sie schrittweise ab.", "poster": "https://image.tmdb.org/t/p/w500/iGv3RdpM6aK7KgTk8gUK9gDZEts.jpg"}];
+const MOVIES = [{"name": "A Knight of the Seven Kingdoms", "year": 2026, "duration": "18.01.2026", "audio_labels": ["Drama", "Sci-Fi & Fantasy", "Action & Adventure"], "overview": "Ein Jahrhundert vor den Ereignissen von „Game of Thrones“ durchstreifen zwei unwahrscheinliche Helden durch Westeros, ein junger, naiver, aber mutiger Ritter, Ser Duncan der Große, und sein kleiner Knappe Egg. Die Handlung spielt in einer Zeit, in der die Targaryen immer noch auf dem Eisernen Thron sitzen und die Erinnerung an die letzten lebenden Drachen noch nicht verblasst ist. Ein großes Schicksal, machtvolle Gegner und gefährliche Erlebnisse erwarten diese unwahrscheinlichen und unvergleichlichen Freunde.", "poster": "https://image.tmdb.org/t/p/w500/w7mQVY9951KdUGWN3rCSOkTR5MK.jpg"}, {"name": "Game of Thrones", "year": 2011, "duration": "17.04.2011", "audio_labels": ["Sci-Fi & Fantasy", "Drama", "Action & Adventure"], "overview": "Die Handlung ist in einer fiktiven Welt angesiedelt und spielt auf den Kontinenten Westeros, den Sieben Königreichen sowie im Gebiet der \"Mauer\" und jenseits davon im Norden und Essos. In dieser Welt ist die Länge der Sommer und Winter unvorhersehbar und variabel; eine Jahreszeit kann Jahre oder sogar Jahrzehnte dauern. Der Handlungsort auf dem Kontinent Westeros in den Sieben Königreichen ähnelt dabei stark dem mittelalterlichen Europa. Die Geschichte spielt am Ende eines langen Sommers und wird in drei Handlungssträngen weitgehend parallel erzählt. In den Sieben Königreichen bauen sich zwischen den mächtigsten Adelshäusern des Reiches Spannungen auf, die schließlich zum offenen Thronkampf führen. Gleichzeitig droht der Wintereinbruch und es zeichnet sich eine Gefahr durch eine fremde Rasse im hohen Norden von Westeros ab.", "poster": "https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg"}, {"name": "Kill Bill: The Whole Bloody Affair", "year": 2026, "duration": "05.11.2026", "audio_labels": ["Action", "Krimi", "Drama", "Thriller"], "overview": "Eine junge Frau, die abwechselnd „die Braut“, „Black Mamba“ oder „Kiddo“ genannt wird, ist Mitglied des von Bill geführten Attentatskommandos Tödliche Viper. Kiddo ist mit Bill liiert und wird von ihm schwanger, verschweigt es ihm aber. Sie will ihr Kind nicht in diesem Milieu aufwachsen lassen, kehrt daraufhin von einem Auftrag nicht zurück und lässt Bill in dem Glauben, sie sei getötet worden. In ihrem neuen Leben arbeitet sie in einem Plattenladen, dessen Inhaber sie heiraten will. Neun Monate später spürt das Attentatskommando sie jedoch auf und erschießt bei der Probe von Kiddos Hochzeit die versammelte Gesellschaft. Die hochschwangere Braut wird von Bill mit einem Kopfschuss lebensgefährlich verletzt und liegt vier Jahre auf einer Pflegestation im Koma. Als sie daraus erwacht, flüchtet sie aus dem Krankenhaus, stellt unter der Überschrift „Death List Five“ eine Todesliste (eng.: „kill bill“) auf und arbeitet sie schrittweise ab.", "poster": "https://image.tmdb.org/t/p/w500/iGv3RdpM6aK7KgTk8gUK9gDZEts.jpg"}];
 
 function openDetail(i) {
   const m = MOVIES[i];
@@ -126,7 +133,7 @@ document.addEventListener("keydown", (e) => {
 // Inline-style gewinnt garantiert gegen jede Stylesheet-Regel.
 const searchInput = document.getElementById("search");
 const cards = Array.from(document.querySelectorAll(".card"));
-const totalCount = 2;
+const totalCount = 3;
 
 searchInput.addEventListener("input", () => {
   const query = searchInput.value.trim().toLowerCase();
@@ -140,7 +147,7 @@ searchInput.addEventListener("input", () => {
   document.getElementById("no-results").classList.toggle("show", visible === 0);
   document.getElementById("count").textContent = query
     ? `${visible} von ${totalCount} Filmen`
-    : `${totalCount} gemerkte Filme · Stand: 02.10.2026 21:51`;
+    : `${totalCount} gemerkte Filme · Stand: 02.10.2026 21:56`;
 });
 </script>
 </body>
