@@ -41,7 +41,7 @@
 </head>
 <body>
 <h1>Merkliste</h1>
-<div class="count" id="count">8 gemerkte Filme &middot; Stand: 17.11.2026 15:37</div>
+<div class="count" id="count">8 gemerkte Filme &middot; Stand: 18.11.2026 12:09</div>
 <div class="search-wrap">
   <input type="text" id="search" class="search-input" placeholder="Merkliste durchsuchen …" autocomplete="off">
 </div>
@@ -182,7 +182,7 @@ searchInput.addEventListener("input", () => {
   document.getElementById("no-results").classList.toggle("show", visible === 0);
   document.getElementById("count").textContent = query
     ? `${visible} von ${totalCount} Filmen`
-    : `${totalCount} gemerkte Filme · Stand: 17.11.2026 15:37`;
+    : `${totalCount} gemerkte Filme · Stand: 18.11.2026 12:09`;
 });
 </script>
 </body>
